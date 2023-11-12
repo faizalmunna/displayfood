@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+// colors
+$bg:#F7F8FA;
+$primary:#FFC700;
+$secondary:#00B1FF;
+$lightGrey01:#6C6364;
+$promoRed:#FF696F;
+$promoPurple:#8F64FF;
+
+//font
+$TitleFontSize:20px;
+$SubtitleSize:16px;
+$baseFontSize:14px;
+$smallFontSize:12px;
+$miniFontSize:10px;
+
+
+/// Container's maximum width
+$max-width: 1240px !default;
+$md-max-width: 1100px !default;
+$sm-max-width: 768px !default;
+$xs-max-width: 600px !default;
+
+
+
+/// Breakpoints map
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+

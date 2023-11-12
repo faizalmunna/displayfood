@@ -1,0 +1,55 @@
+@import "./shared/main";
+
+.App {
+  background-color: $bg;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+
+  .appInner-wrapper {
+    background-color: $bg;
+    max-width: $max-width;
+    padding: 20px auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto 12px;
+
+    .search-wrapper {
+      max-width: 400px;
+      margin-top: 24px;
+    }
+
+    .food-wrapper {
+      display: flex;
+    }
+
+    .promotionCode {
+      > span {
+        > div {
+          border-top-left-radius: 16px;
+          border-bottom-right-radius: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 54px;
+          height: 32px;
+          color: white;
+
+          img {
+            width: 20px;
+          }
+
+        }
+      }
+      .plusOne {
+        background-color: $promoPurple;
+      }
+      .giftItem {
+        background-color: $secondary;
+      }
+      .percentage {
+        background-color: $promoRed;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "../shared/main.scss";
+
+.category-list {
+  display: flex;
+  background-color: $primary;
+  margin: 20px 0;
+  border-radius: 17px;
+  width: max-content;
+  border: solid 1px $primary;
+  height: 48px;
+
+  > div {
+    color: $lightGrey01;
+    font-weight: 500;
+    font-size:$smallFontSize;
+    background-color: $bg;
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid $primary;
+
+    @media (max-width: $xs-max-width) {
+      padding-inline: 8px;
+      font-size:$miniFontSize;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: $primary;
+      color: black;
+    }
+    &:last-child {
+      border-bottom-right-radius: 16px;
+      border-top-right-radius: 16px;
+      border: 0;
+    }
+    &:first-child {
+      border-bottom-left-radius: 16px;
+      border-top-left-radius: 16px;
+    }
+    &.selected {
+      background-color: $primary;
+      color: black;
+      font-weight: 700;
+    }
+  }
+}

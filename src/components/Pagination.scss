@@ -1,0 +1,40 @@
+@import "../shared/main.scss";
+
+.pagination {
+  border: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  gap: 2px;
+  @media (max-width: $xs-max-width) {
+    padding: 12px 0;
+    flex-wrap: wrap;
+  }
+  li {
+    list-style: none;
+
+    button {
+      border: 0;
+      background-color: transparent;
+      width: 24px;
+      height: 24px;
+      font-size: $baseFontSize;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $lightGrey01;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $primary;
+        border-radius: 4px;
+        color: black;
+      }
+    }
+    .selectedPage {
+      background-color: $primary;
+      border-radius: 4px;
+      color: black;
+    }
+  }
+}
